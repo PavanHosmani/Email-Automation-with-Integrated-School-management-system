@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+          }
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 64px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+    </style>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <input type="text" name="firstname" placeholder="firstname"/>
+        </div> 
+        <div>
+            <input type="text" name="lasttname" placeholder="lasttname"/>
+        </div> 
+        <div>
+            <input type="text" name="Roll_number" placeholder="Roll_number"/>
+        </div> 
+        <div>
+            <input type="text" name="class" placeholder="class"/>
+        </div> 
+        <div>
+            <input type="text" name="email" placeholder="email"/>
+        </div>   
+        <div>
+            <input type="text" name="max_fees" placeholder="max_fees"/>
+        </div> 
+        <div>
+            <input type="text" name="paid_fees" placeholder="paid_fees"/>
+        </div> 
+
+        <div>
+            <center><button type="submit" class='button'>submit</button></center>
+        </div>
+    </form>
+</body>
+</html>

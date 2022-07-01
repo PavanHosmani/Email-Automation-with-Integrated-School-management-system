@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>record</title>
+</head>
+<body>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+    </style>
+    <table border="2" colour='black'>
+        <table style="width:100%">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Pending Fees</th>
+          </tr>
+          {% for i in l %}
+          <tr>
+            {% for k in i %}
+              <td>{{k}}</td>
+            {%endfor%}
+          </tr>
+          {%endfor%}
+        </table>
+</body>
+</html>
