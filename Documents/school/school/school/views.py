@@ -24,7 +24,7 @@ def register(request):
     return render(request,'register.html')
 
 def showrecords(request):
-    con=sql.connect(host='localhost',user='root',password='Pawanking9945#',database='school')
+    con=sql.connect(host='localhost',user='root',password='********#',database='school')
     cur=con.cursor()
     cur.execute("SELECT * FROM school")
     records=cur.fetchall()
@@ -34,7 +34,7 @@ def showrecords(request):
     return render(request,'record.html',{'yo':datafromdb})
 
 def send_mail(request):
-    con=sql.connect(host='localhost',user='root',password='Pawanking9945#',database='school')
+    con=sql.connect(host='localhost',user='root',password='*******#',database='school')
     cur=con.cursor()
     cur.execute("SELECT * FROM school")
     records=cur.fetchall()
