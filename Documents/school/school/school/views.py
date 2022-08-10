@@ -15,7 +15,7 @@ def register(request):
         std=request.POST.get('class')
         max_fees=request.POST.get('max_fees')
         paid_fees=request.POST.get('paid_fees')
-        m=sql.connect(host="localhost",user="root",passwd="Pawanking9945#",database="school")
+        m=sql.connect(host="localhost",user="root",passwd="******#",database="school")
         cursor=m.cursor()
         c="insert into school values('{}','{}','{}','{}','{}','{}','{}')".format(firstname,lastname,rollnumber,std,email,max_fees,paid_fees)
         cursor.execute(c)
